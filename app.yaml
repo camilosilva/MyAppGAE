@@ -1,0 +1,46 @@
+application: myapp
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /
+  script: index.html
+
+- url: /index\.html
+  script: index.html
+
+- url: /app\.js
+  script: app.js
+ 
+- url: /app\.json
+  static_files: app.json
+  upload: app.json
+  http_headers:
+    Content-type: application/json
+
+- url: /packager\.json
+  static_files: packager.json
+  upload: packager.json
+  http_headers:
+    Content-type: application/json
+
+- url: /app
+  static_dir: app
+
+- url: /packages
+  static_dir: packages
+
+- url: /resources
+  static_dir: resources
+
+- url: /touch
+  static_dir: touch
+
+- url: /services/views
+  static_dir: services/views
+  http_headers:
+    Content-type: application/json
+
+- url: /services/(.*?)/(.*)
+  script: /services/\1/\2

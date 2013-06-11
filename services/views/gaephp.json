@@ -1,0 +1,22 @@
+{
+    "responseData":{
+        "feed":{
+            "feedUrl":"/services/views/gaephp.json",
+            "title":"GAE PHP Kitchen Sink",
+            "author":"Camilo A. Silva",
+            "description":"GAE PHP Kitchen Sink",
+            "type":"rss20",
+            "entries":[
+                {
+                    "title": "+Google Sign-in",
+                    "slug":"signin",
+                    "link": "http://www.googledevlink.com",
+                    "author": "Camilo A. Silva",
+                    "publishedDate": "Mon, 09 Jun 2013 10:37:00 -0700",
+                    "contentSnippet": "Quick demo on the sing in services of the GAE using PHP",
+                    "content":"<p>Contents</p>"
+                }
+            ]
+        }
+    }
+}
